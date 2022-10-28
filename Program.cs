@@ -35,5 +35,33 @@ namespace Search_Algorithm
                 arr[i] = Int32.Parse(s1);
             }
         }
+
+        public void BinarySearch()
+        {
+            char ch;
+            do
+            {
+                //Accept the number to be searched
+                Console.Write("\n Enter Element want you to search : ");
+                int item = Convert.ToInt32(Console.ReadLine());
+
+                //Apply binary search
+                int lowerbound = 0;
+                int upperbound = n - 1;
+                
+                //Obtain the indext of the elements in the array
+                int mid = (upperbound + lowerbound) / 2;
+                int ctr = 1;
+
+                //Loop to search for he elements in the array
+                while ((item != arr[mid]) && (lowerbound <= upperbound))
+                {
+                    if (item > arr[mid])
+                        lowerbound = mid + 1;
+                    else
+                        upperbound = mid - 1;
+                }    
+            }
+        }
     }
 }
