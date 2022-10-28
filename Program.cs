@@ -15,7 +15,7 @@ namespace Search_Algorithm
         {
             while (true)
             {
-                Console.WriteLine("Enter the number of elements in the array");
+                Console.WriteLine("Enter the number of elements in the array: ");
                 string s = Console.ReadLine();
                 n = Int32.Parse(s);
                 if ((n > 0)) && (n <= 20))
