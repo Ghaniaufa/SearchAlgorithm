@@ -134,6 +134,13 @@ namespace Search_Algorithm
                     Console.WriteLine("-------------------");
                     myList.input();
                     myList.BinarySearch();
+                    break;
+                case 3:
+                    Console.WriteLine(" exit.");
+                    break;
+                    default:
+                    Console.WriteLine("Error");
+                    break;
             }
         }
     }
